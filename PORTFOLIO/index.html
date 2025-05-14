@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Councilor Marisse Balina Eron of Taguig City">
+    <title>Councilor Marisse Balina Eron | Taguig City</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="color-stripe">
+            <div class="blue-stripe"></div>
+            <div class="yellow-stripe"></div>
+            <div class="red-stripe"></div>
+        </div>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="../image/konsehala_logo.jpg" alt="Councilor Marisse Balina Eron Logo">
+            </div>
+
+            <div class="menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://sp.taguig.gov.ph/councilors/">City Councilors</a></li>
+                    <li><a href="https://sp.taguig.gov.ph/councilors/profile/?view=marisse-eron">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/people/Councilor-Marisse-Balina-Eron-Supporters/100067177204142/" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon facebook-icon"></div>
+                </a>
+                <a href="https://www.instagram.com/marissebalinaeronandfriends/" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon instagram-icon"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="flyer-container">
+            <img src="../image/flyers123.jpg" alt="Councilor Marisse Balina Eron Flyer Front">
+            <img src="../image/flyersback_final2024.jpg" alt="Councilor Marisse Balina Eron Flyer Back">
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Information</h3>
+                <p>Office: Sangguniang Panlungsod ng Taguig</p>
+                <p>Email: marisse.eron@taguig.gov.ph</p>
+                <p>Phone: (02) 8555-1234</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Office of Councilor Marisse Balina Eron. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.getElementById('mobileMenuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
