@@ -249,6 +249,108 @@ a:hover {
   transform: scale(1.2);
 }
 
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.box {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  /* Added smooth transitions */
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  border-color: #999;
+}
+
+.header-box {
+  background-color: white;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-shadow:
+      -1px -1px 0 #ffffff,
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+}
+
+.heading {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.box:not(.header-box):not(.name):not(.nobullet) h3::before {
+  content: "• ";
+  color: #000;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.highlight-red {
+  color: red;
+  font-weight: bold;
+}
+
+.highlight-black {
+  color: black;
+  font-weight: bold;
+}
+
+.highlight-name {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dot-section li {
+  margin-bottom: 18px;
+}
+
+.dot-title::before {
+  content: "• ";
+  color: black;
+  font-weight: bold;
+}
+
+.nobullet ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.subheading {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .nav-arrow {
   position: absolute;
   top: 50%;
